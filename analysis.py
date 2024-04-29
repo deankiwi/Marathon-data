@@ -48,7 +48,7 @@ for year, df in zip(years, data):
     year_percentile_times[year] = percentile_times
 
 # Plotting
-plt.figure(figsize=(5, 6))
+plt.figure(figsize=(5, 5))
 
 for year, times in year_percentile_times.items():
     for percentile, time, color in zip(percentiles, times, colors):
@@ -89,15 +89,15 @@ plt.annotate(
     xytext=(2010 -3, year_percentile_times[2010][0] + 0.03),
     color=colors[0],
     arrowprops=dict(arrowstyle='->', color=colors[0], lw=0.3),
-    size=8,
+    size=6,
 )
 plt.annotate(
     f"{hours_to_hh_mm(year_percentile_times[2010][1])}",
     xy=(2010, year_percentile_times[2010][1]),
-    xytext=(2010 -3, year_percentile_times[2010][1] - 0.12),
+    xytext=(2010 -3, year_percentile_times[2010][1] - 0.15),
     color=colors[1],
     arrowprops=dict(arrowstyle='->', color=colors[1], lw=0.3),
-    size=8,
+    size=6,
 )
 plt.annotate(
     f"Top 10% finishing time\n{hours_to_hh_mm(year_percentile_times[2024][0])}",
@@ -105,32 +105,32 @@ plt.annotate(
     xytext=(2024 + 0.5, year_percentile_times[2024][0]+0.03 ),
     color=colors[0],
     arrowprops=dict(arrowstyle='->', color=colors[0], lw=0.3),
-    size=8,
+    size=6,
 )
 plt.annotate(
     f"Median finishing time\n{hours_to_hh_mm(year_percentile_times[2024][1])}",
     xy=(2024, year_percentile_times[2024][1]),
-    xytext=(2024 + 0.5, year_percentile_times[2024][1] + 0.03),
+    xytext=(2024 + 0.5, year_percentile_times[2024][1]),
     color=colors[1],
     arrowprops=dict(arrowstyle='->', color=colors[1], lw=0.3),
-    size=8,
+    size=6,
 )
 plt.annotate(
     f"2018 heat wave",
     xy=(2018, year_percentile_times[2018][0]),
-    xytext=(2018 + 0.5, year_percentile_times[2018][0] + 0.03),
+    xytext=(2018 + 0.5, year_percentile_times[2018][0]+0.13 ),
     color='black',
     arrowprops=dict(arrowstyle='->', color='black', lw=0.3),
-    size=8,
+    size=6,
 )
 
 
 
 plt.yticks(
     np.arange(3, 4.5, 1), [f"{int(tick)} hours" for tick in np.arange(3, 4.5, 1)],
-    size=8
+    size=6
 )
-plt.xticks(np.arange(2010, 2026, 2), size=8)
+plt.xticks(np.arange(2010, 2026, 4), size=6)
 
 # Get the current axis
 ax = plt.gca()
@@ -140,7 +140,7 @@ ax.tick_params(axis="x", colors="lightgrey")
 ax.tick_params(axis="y", colors="lightgrey")
 
 # plt.xlabel("Year")
-plt.title("London Fastest Marathon?\nMens Finishing Time", size=18, fontweight="bold", fontname="bodoni 72", loc="left")
+plt.title( "London Fastest Marathon,\nMens Finishing Time",size=18, fontweight="bold", fontname="bodoni 72", loc="left")
 plt.grid(axis="y", linestyle="--", alpha=0.5)
 
 plt.gca().spines["top"].set_visible(False)
@@ -148,8 +148,10 @@ plt.gca().spines["right"].set_visible(False)
 plt.gca().spines["left"].set_visible(False)
 plt.gca().spines["bottom"].set_visible(False)
 
-plt.text(2008, 2.7, 'Data: results.tcslondonmarathon.com | Chart by Dean Welch', fontsize=8, color='gray', ha='left', va='top')
-plt.xlim(2009, 2029)
+plt.text(2008, 2.7, 'Data: results.tcslondonmarathon.com | Chart by Dean Welch', fontsize=4, color='gray', ha='left', va='top')
+plt.xlim(2009, 2024.4)
+
+plt.subplots_adjust(left=0.2, right=0.8, top=0.6, bottom=0.2)
 
 plt.savefig('London_Marathon_mens.png', dpi=300, bbox_inches='tight')
 
