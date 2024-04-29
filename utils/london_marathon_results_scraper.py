@@ -56,85 +56,85 @@ def scrape_marathon_data(
 
 
 if __name__ == "__main__":
-    # # mens 2010
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2010/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     25,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2010_mens_raw.txt",
-    # )
+    # mens 2010
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2010/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        25,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2010_mens_raw.txt",
+    )
 
-    # # mens 2011
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2011/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     23,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2011_mens_raw.txt",
-    # )
+    # mens 2011
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2011/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        23,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2011_mens_raw.txt",
+    )
 
-    # # mens 2012
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2012/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     24,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2012_mens_raw.txt",
-    # )
+    # mens 2012
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2012/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        24,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2012_mens_raw.txt",
+    )
 
-    # # mens 2013
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2013/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     23,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2013_mens_raw.txt",
-    # )
+    # mens 2013
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2013/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        23,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2013_mens_raw.txt",
+    )
 
-    # # mens 2014
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2014/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     23,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2014_mens_raw.txt",
-    # )
+    # mens 2014
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2014/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        23,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2014_mens_raw.txt",
+    )
 
-    # # mens 2015
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2015/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     24,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2015_mens_raw.txt",
-    # )
+    # mens 2015
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2015/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        24,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2015_mens_raw.txt",
+    )
 
-    # # mens 2016
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2016/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     24,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2016_mens_raw.txt",
-    # )
+    # mens 2016
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2016/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        24,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2016_mens_raw.txt",
+    )
 
-    # # mens 2017
-    # scrape_marathon_data(
-    #     "https://results.tcslondonmarathon.com/2017/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
-    #     24,
-    #     "table",
-    #     "list-table",
-    #     "td",
-    #     "london_marathon_2017_mens_raw.txt",
-    # )
+    # mens 2017
+    scrape_marathon_data(
+        "https://results.tcslondonmarathon.com/2017/index.php?page={page}&event=MAS&num_results=1000&pid=search&search%5Bsex%5D=M&search_sort=place_nosex&split=time_finish_netto",
+        24,
+        "table",
+        "list-table",
+        "td",
+        "london_marathon_2017_mens_raw.txt",
+    )
 
     # mens 2018
     scrape_marathon_data(
